@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: structure/V001__create_tables.sql
+      relativeToChangelogFile: true
+  - include:
+      file: data/V002__insert_users.sql
+      relativeToChangelogFile: true
+  - include:
+      file: data/V003__insert_subscriptions.sql
+      relativeToChangelogFile: true
+  - include:
+      file: data/V004__insert_users_subscriptions.sql
+      relativeToChangelogFile: true
